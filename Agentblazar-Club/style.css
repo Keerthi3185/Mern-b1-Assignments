@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  font-family: "Delius", cursive;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #FDECEC, #FFD6D6, #F6A5A5);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  color: #1a202c;
+  overflow-x: hidden  ;
+}
+
+
+h1, h2, h3 {
+  margin: 0 0 1rem;
+  color: #080829;
+  text-align: center;
+}
+
+section {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+/* ------ Header ------- */ 
+
+.header-container{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #1a202c;
+}
+
+.college-logo {
+  margin-top: 20px;
+  max-height: 40px;
+  padding: 20px;
+}
+
+
+nav ul {
+  width: full;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+nav ul li a{
+  font-size: 1.15rem;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-right: 35px;
+  color: #69698f;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover{
+  color: #080829;
+}
+
+/* ---------- Hero section ----------*/
+
+.hero{
+  margin-top: 6rem;
+}
+
+.club-logos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  gap: 0.5rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.club-text {
+  font-size: 4rem; 
+  color: #1a202c; 
+  line-height: 1; 
+  font-family: "Caveat", cursive;
+}
+
+.agentblazer-logo {
+  width: auto;
+  max-height: 8.5rem; 
+  object-fit: contain;
+}
+
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #080829;
+  color: #080829;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: #080829;
+  color: white;
+}
+
+/* --------- About section --------- */
+#about p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-cards .card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-cards .card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* ---------- Events Section ---------- */
+.events-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+
+/* ---------- Gallery Section ---------- */
+
+#gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery{
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-grid{
+  width: 500;
+  display: flex;
+  animation: slide 10s infinite linear;
+  
+}
+
+@keyframes slide{
+  0%  { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  33% { transform: translateX(-500px); }
+  63% { transform: translateX(-500px); }
+  66% { transform: translateX(-1000px); }
+  97% { transform: translateX(-1000px); }
+  100% { transform: translateX(0px); }
+
+}
+
+.gallery-img{
+  height: 350px;
+  width: 500px;
+  flex-shrink: 0;
+}
+
+.gallery-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-grid:hover{
+  animation-play-state: paused;
+}
+
+/* ---------- Team Section ----------*/
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.member {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.member img {
+
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-bottom: 1rem;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- Contact Section ---------- */
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#contact button {
+  padding: 12px;
+  border: none;
+  background: #080829;
+  color: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background: #333366;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #080829;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+i{
+  color: white;
+  font-size: 2rem;
+}
+
+i:hover{
+  transform: scale(1.25);
+  transition: transform 0.2s ease;
+}
+
+.socials img {
+  height: 24px;
+  margin: 0 8px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
