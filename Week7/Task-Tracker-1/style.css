@@ -1,0 +1,17 @@
+/* Difficulty: very easy */
+body {
+ font-family: sans-serif;
+ background-color: #f9f9f9;
+ padding: 2rem;
+ text-align: center;
+}
+
+
+#output {
+ margin-top: 1rem;
+ padding: 1rem;
+ background-color: #ffffff;
+ /* color: #ffffff;  ── TEACHING-BUG #4 (style) ── */
+ border: 1px solid #ccc;
+}
+

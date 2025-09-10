@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: beige;
+    }
+    #board{
+      min-height: 50px;
+      min-width: none;
+      background-color: white;
+      padding: 0.5rem;
+      margin: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Motivation Board</h1>
+  <input id="note" type="text" placeholder="Enter note here..."/>
+  <button onclick="showNote()">Show Note</button>
+  <button onclick="clearBoard()">Clear</button>
+
+  <div id="board"></div>
+
+  <button onclick="makeBold()">Bold</button>
+  <button onclick="tryHTML()">Try HTML</button>
+  <script src="./app.js"></script>
+</body>
+</html>

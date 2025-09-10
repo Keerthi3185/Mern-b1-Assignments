@@ -178,18 +178,6 @@ nav ul li a:hover{
   width: 500;
   display: flex;
   animation: slide 10s infinite linear;
-  
-}
-
-@keyframes slide{
-  0%  { transform: translateX(0); }
-  30% { transform: translateX(0); }
-  33% { transform: translateX(-500px); }
-  63% { transform: translateX(-500px); }
-  66% { transform: translateX(-1000px); }
-  97% { transform: translateX(-1000px); }
-  100% { transform: translateX(0px); }
-
 }
 
 .gallery-img{
@@ -205,9 +193,20 @@ nav ul li a:hover{
   border-radius: 10px;
 }
 
-.gallery-grid:hover{
-  animation-play-state: paused;
+@keyframes slide{
+  0%  { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  33% { transform: translateX(-500px); }
+  63% { transform: translateX(-500px); }
+  66% { transform: translateX(-1000px); }
+  97% { transform: translateX(-1000px); }
+  100% { transform: translateX(0px); }
+
 }
+
+/* .gallery-grid:hover{
+  animation-play-state: paused;
+} */
 
 /* ---------- Team Section ----------*/
 .team-grid {
@@ -236,9 +235,9 @@ nav ul li a:hover{
   margin-bottom: 1rem;
 }
 
-.member:hover {
+/* .member:hover {
   transform: translateY(-5px);
-}
+} */
 
 /* ---------- Contact Section ---------- */
 #contact form {
